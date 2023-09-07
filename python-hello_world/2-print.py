@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print('"Programming is like building a multilingual puzzel\n')
+string = '"Programming is like building a multilinual puzzel'
+print('{}' .foramt(string))
