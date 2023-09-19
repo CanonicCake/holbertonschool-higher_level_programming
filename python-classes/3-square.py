@@ -2,25 +2,20 @@
 
 
 class Square:
-    """A class Square initilized with size"""
+    """Represents a Square."""
+    __size = None
 
     def __init__(self, size=0):
-        """__init__
-
-        The __init__ method to initilize a class Square.
-
-        Args:
-            size (int) = The size of the class Square.
+        """ Initilizes size
         """
-        if type(size) is not int:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        self.__size = size
 
-        def area(self):
-            """
-            Return the current area of the class Square
-            """
-            return (self.size * self.size)
+    def area(self):
+        """
+        Return the current area of the class Square
+        """
+        return (self.__size * self.__size)
