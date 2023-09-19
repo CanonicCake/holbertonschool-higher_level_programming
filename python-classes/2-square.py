@@ -7,6 +7,9 @@ A Square Class
 
 
 class Square:
+    """A class Square initilized with size"""
+    pass
+
     def __init__(self, size=0):
         """__init__
 
