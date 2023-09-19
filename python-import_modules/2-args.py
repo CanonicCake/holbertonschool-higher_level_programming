@@ -8,13 +8,11 @@ import sys
 aug = sys.argv
 count = len(aug) - 1
 
-if count > 1:
-    print(count, 'arguments:')
-    for i in range(1, count + 1):
-        print('{:d}: {}'.format(i + 1, aug[i + 1]))
+if count == 0:
+    print('0 arguments:')
 elif count == 1:
     print('1 arguments:')
-    for i in range(1, count + 1):
-        print("{:d}: {}".format(i, aug[i]))
-elif count == 0:
-    print('0 arguments.')
+else:
+    print("{} arguments:")
+for i in range(count):
+    print("{}: {}".format(i + 1, aug[i + 1]))
