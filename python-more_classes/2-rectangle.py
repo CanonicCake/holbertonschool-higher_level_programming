@@ -4,9 +4,8 @@
 
 class Rectangle:
     """A class Rectangle"""
-
     def __init__(self, width=0, height=0):
-        """initializes self, width and height
+        """initialization of properties
 
         Args:
         width: width must be an integer
