@@ -2,9 +2,14 @@
 
 
 class Square:
-    """A class Square initilized with size"""
+    """
+    Initilize Class Square
+    """
 
     def __init__(self, size=0):
+        """
+        __init__ method of class Square
+        """
         self.size = size
 
     @property
