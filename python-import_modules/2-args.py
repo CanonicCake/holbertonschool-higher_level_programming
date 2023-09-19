@@ -13,7 +13,7 @@ if count > 1:
     for i in range(1, count + 1):
         print('{:d}: {}'.format(i + 1, aug[i + 1]))
 elif count == 1:
-    print(count, 'arguments:')
+    print('1 arguments:')
     for i in range(1, count + 1):
         print("{:d}: {}".format(i, aug[i]))
 elif count == 0:
