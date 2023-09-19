@@ -1,15 +1,12 @@
 #!/usr/bin/python3
 """Defines a class square."""
 
+
 class Square:
-    """
-    Initilize Class Square
-    """
+    """Initilize Class Square"""
 
     def __init__(self, size=0):
-        """
-        __init__ method of class Square
-        """
+        """__init__ method of class Square"""
         self.size = size
 
     @property
