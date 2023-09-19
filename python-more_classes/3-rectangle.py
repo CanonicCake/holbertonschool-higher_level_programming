@@ -54,3 +54,18 @@ class Rectangle:
             return 0
         else:
             return (self.__height + self.__width) * 2
+
+    def __str__(self):
+        """Returns a string that represents the Rectangle"""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        rect_str = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rect_str += "#"
+            rect_str += "\n"
+        return rect_str[:-1]
+
+    def __print__(self):
+        """prints to the stdout to the console"""
+        print(self)
