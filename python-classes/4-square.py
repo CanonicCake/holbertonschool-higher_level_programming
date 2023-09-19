@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""Defines a class square."""
 
 class Square:
     """
@@ -14,10 +14,12 @@ class Square:
 
     @property
     def size(self):
+        """Properties of self"""
         return self.__size
 
     @size.setter
     def size(self, size):
+        """Sets the size"""
         if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -25,4 +27,5 @@ class Square:
         self.__size = size
 
     def area(self):
+        """Defines the area"""
         return (self.__size * self.__size)
