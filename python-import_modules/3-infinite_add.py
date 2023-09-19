@@ -2,13 +2,10 @@
 import sys
 
 if __name__ == "__main__":
-    """ print infinite additions """
+    """ print the additions of all arguments """
 
-    av = sys.argv
-    lowav = len(av)
     sum = 0
 
-    if lowav > 1:
-        for i in range(1, lowav):
-            sum += int(av[i] + 1)
-    print(sum)
+    for i in range(len(sys.argv) - 1):
+        sum += int(sys.argv[i + 1])
+    print("{}".format(sum))
