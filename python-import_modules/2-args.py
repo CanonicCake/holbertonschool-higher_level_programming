@@ -17,4 +17,4 @@ elif lowav == 1:
     for i in range(1, lowav + 1):
         print("{:d}: {}".format(i, av[i]))
 elif lowav == 0:
-    print(lowav, 'arguments.')
+    print(lowav, '0 arguments.')
