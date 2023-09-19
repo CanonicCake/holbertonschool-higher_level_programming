@@ -5,13 +5,6 @@ class Square:
     """A class Square initilized with size"""
 
     def __init__(self, size=0):
-        """__init__
-
-        The __init__ method to initilize a class Square.
-
-        Args:
-            size (int) = The size of the class Square.
-        """
         self.size = size
 
     @property
