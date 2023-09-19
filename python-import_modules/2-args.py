@@ -5,6 +5,7 @@ if __name__ == "__main__":
     under an argument"""
 
 import sys
+
 aug = sys.argv
 count = len(aug) - 1
 
@@ -13,6 +14,6 @@ if count == 0:
 elif count == 1:
     print('1 arguments:')
 else:
-    print("{} arguments:")
+    print("{} arguments:".format(count))
 for i in range(count):
     print("{}: {}".format(i + 1, aug[i + 1]))
