@@ -6,7 +6,12 @@ class Rectangle:
     """A class Rectangle"""
 
     def __init__(self, width=0, height=0):
-        """initializes self, width and height"""
+        """initializes self, width and height
+
+        Args:
+        width: width must be an integer
+        height: height must be an integer
+        """
         self.width = width
         self.height = height
 
