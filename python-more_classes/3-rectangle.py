@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-"""Defines a rectangle"""
+"""Defines a Rectangle class"""
 
 
 class Rectangle:
-    """A class Rectangle"""
-
+    """Rectangle Class"""
     def __init__(self, width=0, height=0):
-        """initializes self, width and height
+        """Initialization of properties
 
         Args:
         width: width must be an integer
@@ -15,10 +14,10 @@ class Rectangle:
         self.width = width
         self.height = height
 
-        @property
-        def width(self):
-            """Get Properties of width"""
-            return self.__width
+    @property
+    def width(self):
+        """Get Properties of width"""
+        return self.__width
 
     @width.setter
     def width(self, value):
