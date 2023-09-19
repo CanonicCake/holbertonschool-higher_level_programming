@@ -5,16 +5,16 @@ if __name__ == "__main__":
     under an argument"""
 
 import sys
-av = sys.argv
-lowav = len(av) - 1
+aug = sys.argv
+count = len(aug) - 1
 
-if lowav > 1:
-    print(lowav, 'arguments:')
-    for i in range(1, lowav + 1):
-        print('{:d}: {}'.format(i, av[i]))
-elif lowav == 1:
-    print(lowav, 'arguments:')
-    for i in range(1, lowav + 1):
-        print("{:d}: {}".format(i, av[i]))
-elif lowav == 0:
-    print(lowav, 'arguments.')
+if count > 1:
+    print(count, 'arguments:')
+    for i in range(1, count + 1):
+        print('{:d}: {}'.format(i + 1, aug[i + 1]))
+elif count == 1:
+    print(count, 'arguments:')
+    for i in range(1, count + 1):
+        print("{:d}: {}".format(i, aug[i]))
+elif count == 0:
+    print('0 arguments.')
