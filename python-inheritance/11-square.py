@@ -12,7 +12,10 @@ class Square(Rectangle):
         self.__size = size
         super().__init__(size, size)
 
-       def area(self):
+    def area(self):
         """Area of a square"""
         return self.__size * self.__size
 
+    def __str__(self):
+        """Unstandard string of rectangle"""
+        return ("[Square] {}/{}".format(self.__size, self.__size))
