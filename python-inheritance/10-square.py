@@ -8,17 +8,9 @@ class Square(Rectangle):
     """Rectangle that is a class square"""
 
     def __init__(self, size):
-        """Initilizes a squares size
-        
-        Augs:
-        size: size of class Square
-        """
+        """Initilizes a squares size"""
         super().__init__(size, size)
 
         self.integer_validation("size", size)
 
         self.__size = size
-
-    def area(self):
-        """Area of a square"""
-        return self.__size * self.__size
