@@ -17,12 +17,7 @@ class BaseGeometry:
             raise ValueError("{} must be greater than 0".format(name))
 
     def __init__(self, width, height):
-        """Initilizes self width and height
-
-        Augs:
-        height: height of class
-        width: width of class
-        """
+        """Initilizes self width and height"""
         if self.integer_validator("width", width):
             self.__width = width
         if self.integer_validator("height", height):
