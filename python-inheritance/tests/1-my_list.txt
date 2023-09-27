@@ -29,12 +29,12 @@ list is not a list:
 
     >>>MyList.print_sorted(2, 3)
     Traceback (most recent call last):
-
+            ...
     TypeError: print_sorted() takes 1 positional argument, but 2 arguments were given
 
 list is none:
 
     >>>MyList.print_sorted(None)
     Traceback (most recent call last):
-
+            ...
     TypeError: Cannot iterate "NoneType"
