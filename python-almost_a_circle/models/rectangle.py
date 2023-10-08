@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Rectangle based class"""
-import json
+from models.base import Base
 
 
-class Rectangle:
+class Rectangle(Base):
     """Defines a Rectangle class that inherits from Base"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
