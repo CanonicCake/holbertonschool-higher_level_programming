@@ -14,6 +14,20 @@ class Rectangle(Base):
         super().__init__(id)
 
     @property
+    def width(self):
+        """Properties of width"""
+        return self.__width
+
+    @width.setter
+    def width(self, width):
+        """Sets the width"""
+        if type(width) is not int:
+            raise TypeError("width is not an integer")
+        if width <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = width
+
+    @property
     def height(self):
         """Property of height"""
         return self.__height
