@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 """Defines a class Square"""
 from models.rectangle import Rectangle
 
