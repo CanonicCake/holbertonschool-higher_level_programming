@@ -18,6 +18,15 @@ class Base:
     @classmethod
     def to_json_string(list_dictionaries):
         """JSON string by serialization"""
-        if list_dictionaries is None or list_dictionaries == []:
+        if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """Wrties json string to file"""
+        if list_objs is None:
+            list_objs = []
+        filename = cls.__name__ + ".json"
+        with open(filename, "w") as file:
+            file.write(cls.to_json_string(json_))
