@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Lists all states from the database hbtn_0d_0_usa"""
+"""Module documentation: Lists all states from the database hbtn_0d_0_usa"""
 import MySQLdb
 from sys import argv
+
 
 if __name__ == '__main__':
     """List all states from database"""
