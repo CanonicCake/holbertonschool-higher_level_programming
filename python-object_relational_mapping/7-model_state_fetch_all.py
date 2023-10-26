@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""List all State objects from the database hbtn_0e_0_usa under an engine"""
+"""List all State objects from the database hbtn_0e_6_usa under an engine"""
 from sys import argv
 from model_state import State, Base
 from sqlalchemy import create_engine
